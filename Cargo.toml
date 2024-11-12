@@ -1,13 +1,13 @@
 [package]
-name = "iceb"
+name = "myApp"
 version = "0.1.0"
 edition = "2021"
 authors = ["SUP2Ak <your.email@example.com>"]
 license = "MIT"  
-description = "Everysup Application"
-homepage = "https://github.com/SUP2Ak/everysup"
-repository = "https://github.com/SUP2Ak/everysup"
-documentation = "https://github.com/SUP2Ak/everysup/wiki"
+description = "MyApp Application"
+homepage = "https://github.com/SUP2Ak/myapp"
+repository = "https://github.com/SUP2Ak/myapp"
+documentation = "https://github.com/SUP2Ak/myapp/wiki"
 
 [dependencies]
 iced = { version = "0.13.1", features = ["canvas", "tokio", "debug"] }
@@ -18,24 +18,24 @@ image = "0.24"
 embed-resource = "2.4"
 
 [package.metadata.bundle]
-name = "Everysup"
-identifier = "com.everysup.app"
+name = "MyApp"
+identifier = "com.myapp.app"
 icon = ["assets/Logo_SupV.png"]
 resources = ["assets/*"]
 copyright = "Copyright (c) SUP2Ak 2024. All rights reserved."
 category = "Developer Tool"
-short_description = "Everysup Application"
+short_description = "MyApp Application"
 long_description = """
-Application Everysup.
+Application MyApp.
 """
 
 [package.metadata.wix]
 upgrade-guid = "12345678-1234-1234-1234-123456789012"
 path-guid = "87654321-4321-4321-4321-210987654321"
-help-url = { url = "https://github.com/SUP2Ak/everysup/wiki" }
+help-url = { url = "https://github.com/SUP2Ak/myapp/wiki" }
 
 [[bin]]
-name = "iceb"
+name = "myapp"
 path = "src/main.rs"
 windows_subsystem = "windows"  # Ceci supprime la console
 
