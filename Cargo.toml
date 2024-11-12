@@ -1,0 +1,43 @@
+[package]
+name = "iceb"
+version = "0.1.0"
+edition = "2021"
+authors = ["SUP2Ak <your.email@example.com>"]
+license = "MIT"  
+description = "Everysup Application"
+homepage = "https://github.com/SUP2Ak/everysup"
+repository = "https://github.com/SUP2Ak/everysup"
+documentation = "https://github.com/SUP2Ak/everysup/wiki"
+
+[dependencies]
+iced = { version = "0.13.1", features = ["canvas", "tokio", "debug"] }
+chrono = "0.4"
+image = "0.24"
+
+[build-dependencies]
+embed-resource = "2.4"
+
+[package.metadata.bundle]
+name = "Everysup"
+identifier = "com.everysup.app"
+icon = ["assets/Logo_SupV.png"]
+resources = ["assets/*"]
+copyright = "Copyright (c) SUP2Ak 2024. All rights reserved."
+category = "Developer Tool"
+short_description = "Everysup Application"
+long_description = """
+Application Everysup.
+"""
+
+[package.metadata.wix]
+upgrade-guid = "12345678-1234-1234-1234-123456789012"
+path-guid = "87654321-4321-4321-4321-210987654321"
+help-url = { url = "https://github.com/SUP2Ak/everysup/wiki" }
+
+[[bin]]
+name = "iceb"
+path = "src/main.rs"
+windows_subsystem = "windows"  # Ceci supprime la console
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
