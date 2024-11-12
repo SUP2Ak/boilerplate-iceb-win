@@ -3,7 +3,8 @@
 ![GitHub Rust](https://github.com/sup2ak/boilerplate-iceb-win/actions/workflows/rust.yml/badge.svg)
 ![GitHub](https://img.shields.io/github/license/sup2ak/boilerplate-iceb-win)
 
-You can read readme in english too here : 
+You can read readme in english too here :
+
 [![](https://img.shields.io/badge/English-000?style=for-the-badge&logo=github&logoColor=white)](README.md)
 
 Ce projet est un boilerplate pour créer des applications graphiques en Rust en utilisant la bibliothèque Iced. Il est conçu pour vous aider à démarrer rapidement avec une configuration de base.
